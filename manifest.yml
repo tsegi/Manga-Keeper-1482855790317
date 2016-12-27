@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: Manga Keeper
+  host: manga-keeper
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto

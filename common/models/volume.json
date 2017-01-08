@@ -1,0 +1,27 @@
+{
+  "name": "Volume",
+  "plural": "Volumes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "number": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "buffer"
+    },
+    "releaseDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

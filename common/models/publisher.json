@@ -1,0 +1,25 @@
+{
+  "name": "Publisher",
+  "plural": "publisher",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "volumes": {
+      "type": "hasMany",
+      "model": "Volume",
+      "foreignKey": "publisherId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

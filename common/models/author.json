@@ -1,0 +1,25 @@
+{
+  "name": "Author",
+  "plural": "Authors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "volumes": {
+      "type": "hasAndBelongsToMany",
+      "model": "Volume",
+      "foreignKey": "authors"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

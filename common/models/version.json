@@ -1,0 +1,29 @@
+{
+  "name": "Version",
+  "plural": "Versions",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "volumes": {
+      "type": "hasMany",
+      "model": "Volume",
+      "foreignKey": "versionId"
+    },
+    "language": {
+      "type": "hasOne",
+      "model": "Language",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

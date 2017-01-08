@@ -2,7 +2,8 @@
   "_meta": {
     "sources": [
       "../common/models",
-      "./models"
+      "./models",
+      "../node_modules/loopback-component-passport/lib/models"
     ]
   },
   "AccessToken": {
@@ -17,23 +18,67 @@
     "dataSource": "db",
     "public": false
   },
+  "User": {
+    "dataSource": "db"
+  },
   "Role": {
     "dataSource": "db",
     "public": false
   },
+  "UserCredential": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserIdentity": {
+    "dataSource": "db",
+    "public": true
+  },
   "Car": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "Customer": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "Inventory": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "Location": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "Note": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
+  },
+  "Volume": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Version": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Language": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Series": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Author": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Publisher": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserProfile": {
+    "dataSource": "db",
+    "public": true
   }
 }

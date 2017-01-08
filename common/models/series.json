@@ -1,0 +1,25 @@
+{
+  "name": "Series",
+  "plural": "Series",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "versions": {
+      "type": "hasMany",
+      "model": "Version",
+      "foreignKey": "seriesId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

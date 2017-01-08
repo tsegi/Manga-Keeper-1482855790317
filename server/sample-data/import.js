@@ -9,12 +9,14 @@ var cars = require('./cars.json');
 var customers = require('./customers.json');
 var inventory = require('./inventory.json');
 var locations = require('./locations.json');
+var userprofiles = require('./user-profiles.json');
 
 module.exports = function(app, cb) {
   var Inventory = app.models.Inventory;
   var Location = app.models.Location;
   var Customer = app.models.Customer;
   var Car = app.models.Car;
+  var UserProfile = app.models.UserProfile;
   var db = app.dataSources.db;
 
   var ids = {
@@ -47,7 +49,8 @@ module.exports = function(app, cb) {
     importData.bind(null, Location, locations),
     importData.bind(null, Car, cars),
     importData.bind(null, Inventory, inventory),
-    importData.bind(null, Customer, customers)
+    importData.bind(null, Customer, customers),
+    importData.bind(null, UserProfile, userprofiles)
   ], function(err/*, results*/) {
     cb(err);
   });
